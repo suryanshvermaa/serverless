@@ -1,0 +1,27 @@
+
+org: suryansh
+
+app: first-lamdda-function
+
+service: first-lamdda-function
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - httpApi:
+          path: /
+          method: get
+  suryansh:
+    handler: handler.suryansh
+    events:
+      - httpApi:
+          path: /s
+          method: post
+
+plugins:
+ - serverless-offline

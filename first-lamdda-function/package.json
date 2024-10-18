@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "mongoose": "^8.7.2",
+    "serverless-offline": "^14.3.3"
+  }
+}
